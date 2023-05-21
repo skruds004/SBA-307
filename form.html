@@ -7,6 +7,11 @@
     <title>About Us</title>
     <script src="https://kit.fontawesome.com/1473966237.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <style>
+        h3 {
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
     <div id="main-container">
@@ -14,9 +19,54 @@
             <span class="fa-solid fa-frog"> FrogCo</span>
             <a href="about.html">About Us</a>
             <a href="index.html">Home</a>
-            <a class="active" href="#register">Register</a>
+            <a class="active" href="#register">Forms</a>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, veniam recusandae commodi ducimus iure nesciunt officiis maxime a? Provident nostrum error nisi quibusdam ex consectetur, ad expedita commodi veniam placeat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ea blanditiis quas dignissimos facere voluptatem quam ipsam officiis sunt odio eos a, quos eius itaque quidem eum explicabo beatae doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eius sit consequatur quae fugiat et, beatae exercitationem maxime laboriosam voluptates autem excepturi id aut neque nam cupiditate accusamus dolorem illum?</p>
+        <div class="form-container">
+            <form action="#">
+                <h1>Amphibian Form</h1>
+                <h3>Favorite Amphibian Order</h3>
+                <select name="amphibian" id="fav-amphibian">
+                    <option value="0">Frog</option>
+                    <option value="1">Salamander</option>
+                    <option value="2">Caecilian</option>
+                </select>
+                <h3>Amphibians You Own</h3>
+                <fieldset>
+                    <input type="checkbox" id="owned-frog" name="owned-frog" value="Frog">
+                    <label for="owned-frog">Frog</label>
+                    <input type="checkbox" id="owned-toad" name="owned-toad" value="Toad">
+                    <label for="owned-toad">Toad</label>
+                    <input type="checkbox" id="owned-salamander" name="owned-salamander" value="Salamander">
+                    <label for="owned-salamander">Salamander</label>
+                    <input type="checkbox" id="owned-newt" name="owned-newt" value="Newt">
+                    <label for="owned-newt">Newt</label>
+                </fieldset>
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="form-container">
+            <form action="#">
+                <h1>Registration Form</h1>
+                <h3>Email</h3>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                <h3>Password</h3>
+                <input type="password" name="password" id="password" placeholder="Enter Password">
+                <input type="password" name="password" id="password-confirm" placeholder="Confirm Password">
+                <h3>Gender</h3>
+                <fieldset>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="nonbinary" name="gender" value="Nonbinary">
+                    <label for="nonbinary">Nonbinary</label>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <br>
     </div>
 </body>
 </html>

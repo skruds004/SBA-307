@@ -58,6 +58,17 @@ body {
     color: azure;
 }
 
+#dropdown {
+    background-color: #35495e;
+    border: 0px;
+}
+
+#dropdown * {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    border: 0px;
+}
+
 #image-container {
     display: flex;
     justify-content:space-around;
@@ -122,4 +133,55 @@ th {
 
 th, td {
     text-align: center;
+}
+
+b {
+    font-weight: 900;
+    color:aliceblue;
+}
+
+.form-container {
+    margin: 20px auto;
+    width: 95%;
+    background-color: #347474;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #42b883;
+}
+
+fieldset {
+    border: 1px solid #42b883;
+    border-radius: 5px;
+}
+
+select {
+    background-color: #347474;
+    border-color: #42b883;
+    color: aliceblue;
+}
+
+input, input:focus {
+    background-color: #357575;
+    border-color: #42b883;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+::placeholder {
+    color:rgb(132, 167, 231);
+}
+
+button {
+    background-color: #347474;
+    color: aliceblue;
+    border-radius: 10px;
+    border: #42b883 2px solid;
+    width: 100px;
+    height: 30px;
+}
+
+button:active {
+    background-color: #42b883;
+    color:aliceblue;
+    border: 0px;
 }
